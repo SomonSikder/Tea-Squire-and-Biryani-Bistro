@@ -1,0 +1,63 @@
+.hero-content {
+  padding-top: 70px;
+}
+.hero-title {
+  font-size: 2.5rem;
+}
+.hero-title span {
+  color: #df2020;
+}
+.hero-content p {
+  font-size: 1rem;
+  line-height: 30px;
+  color: #777;
+}
+.hero-btns button {
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.order-btn {
+  background: #df2020;
+  color: #fff;
+  transition: 0.3s;
+}
+.order-btn:hover {
+  background-color: #212245;
+}
+.all-foods-btn {
+  background: transparent;
+  border: 1px solid #df2020 !important;
+}
+.all-foods-btn a {
+  text-decoration: none;
+  color: #df2020 !important;
+}
+.all-foods-btn:hover {
+  border: 1px solid #212245 !important;
+  width: 150px;
+  transition: width 0.3s;
+}
+
+.hero-service p {
+  color: #212245;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.shipping-icon i {
+  padding: 5px;
+  background: #df2020;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 500 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-btns button {
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-weight: normal;
+  }
+}
