@@ -70,7 +70,7 @@ function Home(props) {
 
       setAllProducts(filteredProducts);
     }
-    if (category === "Biryani") {
+    if (category === "BIRYANI") {
       const filteredProducts = products.filter(
         (item) => item.category === "Biryani"
       );
