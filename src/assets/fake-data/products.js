@@ -7,6 +7,8 @@ import rice from "../images/rice.png";
 import rice2 from "../images/rice2.png";
 import rice3 from "../images/rice3.png";
 
+import des1 from "../images/desserts.png";
+
 import product_06_image_01 from "../images/bread(1).png";
 import product_06_image_02 from "../images/bread(2).png";
 import product_06_image_03 from "../images/bread(3).png";
@@ -31,6 +33,17 @@ const products = [
     image02: rice2,
     image03: rice3,
     category: "Biryani",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
+  },
+  {
+    id: "003",
+    title: "Desserts",
+    price: 15.0,
+    image01: des1,
+    image02: des1,
+    image03: des1,
+    category: "Desserts",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },

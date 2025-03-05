@@ -15,6 +15,7 @@ import featureImg03 from "../assets/images/service-03.png";
 import products from "../assets/fake-data/products.js";
 
 import foodCategoryImg03 from "../assets/images/bread.png";
+import desserts from "../assets/images/desserts.png";
 import rice from "../assets/images/rice.png";
 import tea from "../assets/images/tea.png";
 
@@ -71,6 +72,13 @@ function Home(props) {
     if (category === "BIRYANI") {
       const filteredProducts = products.filter(
         (item) => item.category === "Biryani"
+      );
+
+      setAllProducts(filteredProducts);
+    }
+    if (category === "DESSERTS") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Desserts"
       );
 
       setAllProducts(filteredProducts);
@@ -211,6 +219,15 @@ function Home(props) {
                   <img src={rice} alt="" />
                   Biryani
                 </button>
+                <button
+                  className={`d-flex align-items-center gap-2 ${
+                    category === "DESSERTS" ? "foodBtnActive" : ""
+                  } `}
+                  onClick={() => setCategory("DESSERTS")}
+                >
+                  <img src={desserts} alt="" />
+                  Desserts
+                </button>
 
                 <button
                   className={`d-flex align-items-center gap-2 ${
@@ -297,7 +314,7 @@ function Home(props) {
           <Row>
             <Col lg="12" className="text-center mb-5 ">
               <h2>
-                Hot <span className="text-danger">Pizza</span>
+                Tea Squire & <span className="text-danger">Biryani Bistro</span>
               </h2>
             </Col>
 
