@@ -1,4 +1,4 @@
-## Food Delivery App tea-squire-and-biryani-bistro-liqcthtyp.vercel.app
+## tea-squire-and-biryani-bistro-liqcthtyp.vercel.app
 
 ### Features:
 
