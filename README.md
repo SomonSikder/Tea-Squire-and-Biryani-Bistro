@@ -1,4 +1,4 @@
-## Pizza Delivery App https://papaya-croquembouche-cdd8cd.netlify.app
+## Food Delivery App tea-squire-and-biryani-bistro-liqcthtyp.vercel.app
 
 ### Features:
 
