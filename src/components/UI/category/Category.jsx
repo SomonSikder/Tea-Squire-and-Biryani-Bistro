@@ -1,27 +1,23 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
-import categoryImg01 from "../../../assets/images/category-01.png";
-import categoryImg02 from "../../../assets/images/category-02.png";
-import categoryImg03 from "../../../assets/images/category-03.png";
-import categoryImg04 from "../../../assets/images/category-04.png";
+import tea from "../../../assets/images/hot-tea-icon.png";
+import dessert from "../../../assets/images/macarons-color-icon.png";
+import rice from "../../../assets/images/rice-bowl-icon.png";
 import "../../../styles/category.css";
 
 const categoryData = [
   {
-    display: "Fast Food",
-    imgUrl: categoryImg01,
+    display: "Biryani",
+    imgUrl: rice,
   },
   {
-    display: "Pizza",
-    imgUrl: categoryImg02,
+    display: "Tea",
+    imgUrl: tea,
   },
+
   {
-    display: "Asian Food",
-    imgUrl: categoryImg03,
-  },
-  {
-    display: "Row Meat",
-    imgUrl: categoryImg04,
+    display: "Desserts",
+    imgUrl: dessert,
   },
 ];
 
@@ -31,11 +27,15 @@ const Category = () => {
       <Row>
         {categoryData.map((item, index) => (
           <Col lg="3" md="4" sm="6" xs="6" className="mb-3" key={index + 1}>
-            <div className="category-item">
-              <div className="category-img">
-                <img src={item.imgUrl} alt="Category_item" />
+            <div className="category-item bg-pink-100 p-4 rounded-lg text-center">
+              <div className="category-img w-full h-40 flex items-center justify-center overflow-hidden">
+                <img
+                  src={item.imgUrl}
+                  alt="Category_item"
+                  className="w-auto h-full object-cover rounded-md"
+                />
               </div>
-              <h6>{item.display}</h6>
+              <h6 className="mt-2 text-black">{item.display}</h6>
             </div>
           </Col>
         ))}

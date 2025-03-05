@@ -15,8 +15,6 @@ import featureImg03 from "../assets/images/service-03.png";
 import products from "../assets/fake-data/products.js";
 
 import foodCategoryImg03 from "../assets/images/bread.png";
-import foodCategoryImg01 from "../assets/images/hamburger.png";
-import foodCategoryImg02 from "../assets/images/pizza.png";
 import rice from "../assets/images/rice.png";
 import tea from "../assets/images/tea.png";
 
@@ -73,21 +71,6 @@ function Home(props) {
     if (category === "BIRYANI") {
       const filteredProducts = products.filter(
         (item) => item.category === "Biryani"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-    if (category === "BURGER") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Burger"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-
-    if (category === "PIZZA") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Pizza"
       );
 
       setAllProducts(filteredProducts);
@@ -227,25 +210,6 @@ function Home(props) {
                 >
                   <img src={rice} alt="" />
                   Biryani
-                </button>
-                <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "BURGER" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("BURGER")}
-                >
-                  <img src={foodCategoryImg01} alt="" />
-                  Burger
-                </button>
-
-                <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "PIZZA" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("PIZZA")}
-                >
-                  <img src={foodCategoryImg02} alt="" />
-                  Pizza
                 </button>
 
                 <button
